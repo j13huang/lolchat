@@ -7,7 +7,7 @@ from sleekxmpp import ClientXMPP
 from sleekxmpp.exceptions import IqError, IqTimeout
 
 
-class EchoBot(ClientXMPP):
+class LoLChat(ClientXMPP):
 
     def __init__(self, jid, password):
         ClientXMPP.__init__(self, jid, password)
@@ -66,7 +66,7 @@ if __name__ == '__main__':
 
     username = args.username[0]
     password = getpass.getpass()
-    xmpp = EchoBot(username + '@pvp.net/xiff', 'AIR_' + password)
+    xmpp = LoLChat(username + '@pvp.net/xiff', 'AIR_' + password)
     xmpp.connect(address=('chat.na2.lol.riotgames.com',5223), use_tls=False, use_ssl=True)
     #xmpp.connect(address=('chat.na2.lol.riotgames.com',5223))
     xmpp.process(block=True)
