@@ -1,11 +1,13 @@
 import logging
 import argparse
 import getpass
-import xml.etree.ElementTree as ElementTree
+import parse_roster
 
 from sleekxmpp import ClientXMPP
 from sleekxmpp.exceptions import IqError, IqTimeout
 
+PRESENCE_TO_ATTRIBUTE = 'to'
+PRESENCE_FROM_ATTRIBUTE = 'from'
 
 class LoLChat(ClientXMPP):
 
@@ -14,6 +16,14 @@ class LoLChat(ClientXMPP):
 
         self.add_event_handler("session_start", self.session_start)
         self.add_event_handler("message", self.message)
+        self.add_event_handler("presence_available", self.presence_available)
+        self.add_event_handler("presence_unavailable", self.presence_unavailable)
+        # xep_0030 dunno if you can use
+        #self.add_event_handler("disco_info", self.disco_info)
+        #self.add_event_handler("disco_items", self.disco_items)
+        self.jid_summoner = {}
+        self.available = []
+        self.unavailable = []
 
         # If you wanted more functionality, here's how to register plugins:
         # self.register_plugin('xep_0030') # Service Discovery
@@ -30,8 +40,10 @@ class LoLChat(ClientXMPP):
     def session_start(self, event):
         presence = self.send_presence()
         roster = self.get_roster()
-        tree = ElementTree.parse(roster)
-        print tree
+        self.jid_summoner = parse_roster.parse_roster(roster)
+        self.unavailable = self.jid_summoner.keys()
+        #print self.jid_summoner
+        #import pdb; pdb.set_trace()
 
         # Most get_*/set_* methods from plugins use Iq stanzas, which
         # can generate IqError and IqTimeout exceptions
@@ -45,6 +57,27 @@ class LoLChat(ClientXMPP):
         # except IqTimeout:
         #     logging.error('Server is taking too long to respond')
         #     self.disconnect()
+
+    def presence_available(self, presence):
+        #print presence
+        from_jid = presence[PRESENCE_FROM_ATTRIBUTE] 
+        if from_jid not in self.available:
+            self.available.append(from_jid)
+
+        if from_jid in self.unavailable:
+            self.unavailable.remove(from_jid)
+            
+        #import pdb; pdb.set_trace()
+
+    def presence_unavailable(self, presence):
+        from_jid = presence[PRESENCE_FROM_ATTRIBUTE] 
+        if from_jid not in self.unavailable:
+            self.unavailable.append(from_jid)
+
+        if from_jid in self.available:
+            self.available.remove(from_jid)
+
+        #import pdb; pdb.set_trace()
 
     def message(self, msg):
         print msg

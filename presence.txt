@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<presence to="sum35873@pvp.net/xiff" from="sum181@pvp.net/xiff">
+   <show>dnd</show>
+   <status>
+      <body>
+         <profileIcon>21</profileIcon>
+         <level>30</level>
+         <wins>1520</wins>
+         <leaves>4</leaves>
+         <odinWins>260</odinWins>
+         <odinLeaves>0</odinLeaves>
+         <queueType />
+         <rankedLosses>0</rankedLosses>
+         <rankedRating>0</rankedRating>
+         <tier>GOLD</tier>
+         <rankedSoloRestricted>false</rankedSoloRestricted>
+         <rankedLeagueName>Nasus's Hunters</rankedLeagueName>
+         <rankedLeagueDivision>V</rankedLeagueDivision>
+         <rankedLeagueTier>SILVER</rankedLeagueTier>
+         <rankedLeagueQueue>RANKED_TEAM_5x5</rankedLeagueQueue>
+         <rankedWins>19</rankedWins>
+         <championMasteryScore>11</championMasteryScore>
+         <statusMsg>Anyone wanna play?</statusMsg>
+         <skinname>Gnar</skinname>
+         <gameQueueType>NONE</gameQueueType>
+         <isObservable>ALL</isObservable>
+         <gameStatus>inGame</gameStatus>
+         <timeStamp>1433304411702</timeStamp>
+      </body>
+   </status>
+   <priority>0</priority>
+</presence>

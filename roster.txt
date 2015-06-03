@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iq to="sum35873@pvp.net/xiff" from="sum35873@pvp.net" id="79fcac4e-7262-4e1a-8ca0-1745361a941d-3" type="result">
+   <query xmlns="jabber:iq:roster">
+      <item jid="sum20456718@pvp.net" name="MisTakElol" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum19508007@pvp.net" name="LordofAll10" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum20065166@pvp.net" name="unichan" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum19920946@pvp.net" name="ArronHo" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum19608368@pvp.net" name="Rossini" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum19917861@pvp.net" name="Ugly Cat Sweater" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum514096@pvp.net" name="tipzntrix" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum23189399@pvp.net" name="muiyoo" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum19550737@pvp.net" name="norioon" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum512004@pvp.net" name="SpeedyRacoon" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum19010136@pvp.net" name="Masterplanner" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum346476@pvp.net" name="Bubbbo" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum21838136@pvp.net" name="acYnic" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum21438451@pvp.net" name="HWshield" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum19579301@pvp.net" name="stoppin" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum415151@pvp.net" name="Korps" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum19567622@pvp.net" name="1337Rooster" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum19663172@pvp.net" name="cyberdaniel" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum417268@pvp.net" name="aseraphim" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum19442003@pvp.net" name="uwalvin" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum20846002@pvp.net" name="BadHorseOfSin" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum110908@pvp.net" name="5HATCOMBO" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum19552807@pvp.net" name="Forod" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum20269384@pvp.net" name="Stanley0506" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum20099646@pvp.net" name="Coolba" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum19558437@pvp.net" name="Gokuhen" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum568768@pvp.net" name="Kaiokhen" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum21423459@pvp.net" name="imuiyoo" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum20288948@pvp.net" name="nastANTHONY" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum19992958@pvp.net" name="jckool" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum71198@pvp.net" name="Achuu" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum195686@pvp.net" name="rewt" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum81647@pvp.net" name="DenAce" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum19431150@pvp.net" name="DomhoX" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum559059@pvp.net" name="Torj" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum19682768@pvp.net" name="ZergRushKEKEKE" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum19067186@pvp.net" name="GewdJab" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum19214773@pvp.net" name="A Mana Potion" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum19835616@pvp.net" name="Matoc13" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum19233798@pvp.net" name="chu8" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum25315184@pvp.net" name="jackybaby" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum19803403@pvp.net" name="DaeniusZ" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum20933042@pvp.net" name="lemon cream cake" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum60783@pvp.net" name="TheOddOne" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum20839691@pvp.net" name="Mid RapidSTAR" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum171329@pvp.net" name="pind" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum19922477@pvp.net" name="Litokun" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum519040@pvp.net" name="VENUMB" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum21417145@pvp.net" name="Lunarhawk" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum19773911@pvp.net" name="Champion Mage" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum24139061@pvp.net" name="aquaGray" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum309911@pvp.net" name="ChaosGopher" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum20853046@pvp.net" name="AMLegendary" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum20345084@pvp.net" name="Aku" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum19563227@pvp.net" name="GoDInferno" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum72574@pvp.net" name="WindowsVista" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum21014283@pvp.net" name="kousaka" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum30345985@pvp.net" name="Halby" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum20365766@pvp.net" name="onici" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum100720@pvp.net" name="Tsusa" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum25147169@pvp.net" name="jaywuuu" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum19550786@pvp.net" name="shadowminion" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum19723447@pvp.net" name="JunSuk" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum20468216@pvp.net" name="Lord Wang" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum23780522@pvp.net" name="1337Hen" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum26177418@pvp.net" name="yucorp1" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum27700603@pvp.net" name="AlwaysGoofingOff" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum23153347@pvp.net" name="HGao" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum20474249@pvp.net" name="Wirageon" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum25199490@pvp.net" name="PipJackling" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum20474035@pvp.net" name="Vikali" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum61497@pvp.net" name="Tosh" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum86341@pvp.net" name="Murrr" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum20795860@pvp.net" name="C1tad3l" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum3218@pvp.net" name="Steven" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum527335@pvp.net" name="Rolante" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum22875909@pvp.net" name="Zygonn" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum102993@pvp.net" name="tomatoorange" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum25947878@pvp.net" name="gergivt" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum7341@pvp.net" name="Talbatross" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum23038225@pvp.net" name="Varron2" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum20994620@pvp.net" name="Lucario Love" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum21298184@pvp.net" name="djc92" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum181@pvp.net" name="Ravenite" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum20404610@pvp.net" name="TheQuakerOats" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum25433470@pvp.net" name="RamzaDelita" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum42083@pvp.net" name="MyFleetingDream" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum19637651@pvp.net" name="G C M" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum21803053@pvp.net" name="juKi" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum22998239@pvp.net" name="Strifeee" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum30731169@pvp.net" name="valce1" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum25009748@pvp.net" name="GGZeero" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum35782424@pvp.net" name="MoeBrujo" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum35433440@pvp.net" name="NuanceOne" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum21368877@pvp.net" name="SWYANE WADE" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum537957@pvp.net" name="Pellanor" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum49140@pvp.net" name="TheAnomaly" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum21964487@pvp.net" name="PsykeOut29" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum22840288@pvp.net" name="Tonkat" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum19066338@pvp.net" name="Chiat" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum23715524@pvp.net" name="PureStrikes" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum31740820@pvp.net" name="Púlsé" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum23071164@pvp.net" name="lronSheep" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum21200201@pvp.net" name="Mezuzza" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum21026444@pvp.net" name="jhspaybar" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum40647613@pvp.net" name="decadent one" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum21200713@pvp.net" name="ZSparkyZ" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum22001@pvp.net" name="Iron Man" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum21879516@pvp.net" name="ZeroCardinality" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum93504@pvp.net" name="Baron Von Richthofen" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum198320@pvp.net" name="Nightime" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum206@pvp.net" name="Gasty" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum24407089@pvp.net" name="Xairul" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum31189587@pvp.net" name="Insiggles" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum22844682@pvp.net" name="Suuhja" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum23823412@pvp.net" name="InsigmaTheory" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum21390644@pvp.net" name="RushWizard3" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum30474078@pvp.net" name="haylow" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum19156131@pvp.net" name="Creaca" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum19092548@pvp.net" name="Ibne" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum171704@pvp.net" name="FirstGameLife" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum21297362@pvp.net" name="primalURGE" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum23526870@pvp.net" name="Ko to the Ni" subscription="both">
+         <group priority="2">e Dominion</group>
+      </item>
+      <item jid="sum21014822@pvp.net" name="King of Heroes" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum23068614@pvp.net" name="Delphyr" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum1988@pvp.net" name="Paddo" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum3321@pvp.net" name="RiotZALE" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum27776870@pvp.net" name="JawstheMusical" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum105068@pvp.net" name="frozzenfire" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum434113@pvp.net" name="KT FlaSh" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum24526427@pvp.net" name="Bubby Hill" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum29340824@pvp.net" name="The Omnivious" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum292707@pvp.net" name="Three Libras" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum24540889@pvp.net" name="broseph4" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum22474464@pvp.net" name="Protobot" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum525706@pvp.net" name="Failoe" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum36971165@pvp.net" name="DeadHeadRussell" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum23375548@pvp.net" name="wagaflocka" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum19292487@pvp.net" name="Miss Tickle" subscription="both">
+         <group priority="2">e Dominion</group>
+      </item>
+      <item jid="sum25217357@pvp.net" name="DestinyfOx" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum24238137@pvp.net" name="Princess Lüna" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum19897130@pvp.net" name="Felys" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum20733542@pvp.net" name="CrapPile" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum30958435@pvp.net" name="zhaoyilong1" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum43370139@pvp.net" name="faceofthebeast" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum22230418@pvp.net" name="Dio DeSol" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum35426@pvp.net" name="zarcath" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum21762735@pvp.net" name="b0ttlep0ppin" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum21622086@pvp.net" name="On3M4n4rmy" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum23391048@pvp.net" name="Noble Sacrifice" subscription="both">
+         <group priority="4">d</group>
+      </item>
+      <item jid="sum25942527@pvp.net" name="SmigleMi" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum19051563@pvp.net" name="Bluesforte" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum25114358@pvp.net" name="Blackmamba1221" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum24920288@pvp.net" name="Hao the Great" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum26754855@pvp.net" name="Silvr" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum20321614@pvp.net" name="MalfusX" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum19760136@pvp.net" name="erwinbooze" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum19535084@pvp.net" name="CrsEMCL" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum574036@pvp.net" name="Zazimash" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum21388051@pvp.net" name="silverdirge" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum443097@pvp.net" name="hiphopanonymous" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum595658@pvp.net" name="Boughter" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum184404@pvp.net" name="LUEshi" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum23599@pvp.net" name="ItsTexter" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum24694067@pvp.net" name="Sujoo" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum22074304@pvp.net" name="ArgonautJason" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum20756751@pvp.net" name="ilovllamas12" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum32632328@pvp.net" name="Frost burn Lee" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum23687600@pvp.net" name="raxiom" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum18978495@pvp.net" name="KMW" subscription="both">
+         <group priority="3">e Amazon</group>
+      </item>
+      <item jid="sum32305973@pvp.net" name="SlickSinner" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum20085620@pvp.net" name="Dota 2 Is Better" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum19659650@pvp.net" name="M0 Money" subscription="both">
+         <group priority="1">**Default</group>
+      </item>
+      <item jid="sum65131599@pvp.net" name="historianssn" subscription="both">
+         <group />
+      </item>
+   </query>
+</iq>
+
