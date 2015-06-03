@@ -1,6 +1,7 @@
 import logging
 import argparse
 import getpass
+import xml.etree.ElementTree as ElementTree
 
 from sleekxmpp import ClientXMPP
 from sleekxmpp.exceptions import IqError, IqTimeout
@@ -27,8 +28,10 @@ class EchoBot(ClientXMPP):
         # self.ssl_version = ssl.PROTOCOL_SSLv3
 
     def session_start(self, event):
-        self.send_presence()
-        self.get_roster()
+        presence = self.send_presence()
+        roster = self.get_roster()
+        tree = ElementTree.parse(roster)
+        print tree
 
         # Most get_*/set_* methods from plugins use Iq stanzas, which
         # can generate IqError and IqTimeout exceptions
@@ -44,8 +47,9 @@ class EchoBot(ClientXMPP):
         #     self.disconnect()
 
     def message(self, msg):
-        if msg['type'] in ('chat', 'normal'):
-            msg.reply("Thanks for sending\n%(body)s" % msg).send()
+        print msg
+        #if msg['type'] in ('chat', 'normal'):
+            #msg.reply("Thanks for sending\n%(body)s" % msg).send()
 
 
 if __name__ == '__main__':
@@ -66,4 +70,5 @@ if __name__ == '__main__':
     xmpp.connect(address=('chat.na2.lol.riotgames.com',5223), use_tls=False, use_ssl=True)
     #xmpp.connect(address=('chat.na2.lol.riotgames.com',5223))
     xmpp.process(block=True)
+    #xmpp.process(block=False)
 
