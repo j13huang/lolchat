@@ -3,7 +3,7 @@ JID_KEY = 'jid'
 NAME_KEY = 'name'
 
 def from_string(string):
-    root = ElementTree.fromstring(data)
+    root = ElementTree.fromstring(string)
 
     return parse_roster(root)
 
@@ -19,6 +19,6 @@ def parse_roster(root):
 
 if __name__ == '__main__':
     with open('roster.txt', 'r') as f:
-        data = f.readline()
+        data = f.read()
         jid_summoner = from_string(data)
         print jid_summoner
