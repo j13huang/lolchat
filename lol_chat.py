@@ -180,8 +180,8 @@ class LoLChat(ClientXMPP):
         for i, jid in enumerate(self.online):
             name = self.jid_summoner_name[jid]
             summoner = self.summoners[name]
-            data = UnicodePrettyPrinter().pformat(summoner.data) if status else ''
-            print '{} {} {} {}'.format(i + 1, name, jid if jids else '', data)
+            data = UnicodePrettyPrinter().pformat(summoner.data) if status else summoner.get_show()
+            print '{} {} {} | {}'.format(i + 1, name, jid if jids else '', data)
 
     def select_user(self, user_index):
         if user_index == 0:

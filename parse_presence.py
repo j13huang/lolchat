@@ -5,8 +5,6 @@ import summoner
 PRESENCE_SHOW_KEY = 'show'
 PRESENCE_STATUS_KEY = 'status'
 
-DATA_SHOW_KEY = 'show'
-
 def from_string(name, string):
     root = ElementTree.fromstring(string)
     stanza = Presence(xml=root)
@@ -17,7 +15,7 @@ def from_string(name, string):
 def parse_presence(name, presence):
     data = {}
     show = presence[PRESENCE_SHOW_KEY]
-    data[DATA_SHOW_KEY] = show
+    data[summoner.Summoner.DATA_SHOW_KEY] = show
 
     #import pdb; pdb.set_trace()
     #for stanza in presence.get_payload():
