@@ -1,11 +1,13 @@
 import xml.etree.ElementTree as ElementTree
+from sleekxmpp.xmlstream import stanzabase
 JID_KEY = 'jid'
 NAME_KEY = 'name'
 
 def from_string(string):
     root = ElementTree.fromstring(string)
+    stanza = stanzabase.StanzaBase(xml=root)
 
-    return parse_roster(root)
+    return parse_roster(stanza)
 
 def parse_roster(root):
     jid_summoner = {}

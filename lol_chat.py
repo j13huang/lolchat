@@ -3,6 +3,7 @@ import argparse
 import getpass
 import parse_roster
 import parse_presence
+from unicode_pretty_printer import UnicodePrettyPrinter
 
 from sleekxmpp import ClientXMPP
 from sleekxmpp.exceptions import IqError, IqTimeout
@@ -12,6 +13,8 @@ RESOURCE = 'xiff'
 PASSWORD_PREFIX = 'AIR_'
 
 STANZA_ATTRIBUTE_TIMESTAMP = 'stamp'
+STANZA_SHOW = 'show'
+STANZA_BODY = 'body'
 
 class LoLChat(ClientXMPP):
 
@@ -38,6 +41,12 @@ class LoLChat(ClientXMPP):
         # jid, name
         self.current_user = ('','')
 
+        self.status_blob = ''
+        with open('status.txt', 'r') as f:
+            blob = f.read()
+            self.status_blob = blob
+
+        #print self.status_blob
         # If you wanted more functionality, here's how to register plugins:
         # self.register_plugin('xep_0030') # Service Discovery
         # self.register_plugin('xep_0199') # XMPP Ping
@@ -57,8 +66,9 @@ class LoLChat(ClientXMPP):
         xmpp.process(block=False)
 
     def session_start(self, event):
-        presence = self.send_presence()
+        presence = self.send_presence(pstatus=self.status_blob)
         roster = self.get_roster()
+        #print roster
         self.jid_summoner_name = parse_roster.parse_roster(roster)
         self.offline = self.jid_summoner_name.keys()
         #print self.jid_summoner_name
@@ -78,29 +88,37 @@ class LoLChat(ClientXMPP):
         #     self.disconnect()
 
     def presence_available(self, presence):
-        print 'available', presence.findall('*/*/*')
+        print 'available', presence.get_payload()
 
     def presence_unavailable(self, presence):
-        print 'unavailable', presence.findall('*/*/*')
+        print 'unavailable', presence.get_payload()
 
     def presence_form(self, presence):
-        print 'form', presence.findall('*/*/*')
+        print 'form', presence.get_payload()
 
     def sent_presence(self, data):
-        print 'sent_presence', data
+        print 'sent_presence', data.get_payload()
 
     def changed_status(self, presence):
+        # show changed
         from_jid = self.stanza_jid_from(presence)
-        #print 'changed_status', from_jid, presence.findall('*')
-        #print 'changed_status', from_jid, presence.findall('*/*')
-        #print 'changed_status', from_jid, presence.findall('*/*/*')
+        if from_jid in self.boundjid.full:
+            return
+        
+        if not STANZA_SHOW in presence:
+            return
+
+        summoner = self.summoners[from_jid]
+        summoner[STANZA_SHOW] = presence[STANZA_SHOW]
+        #print 'changed_status', name, presence
 
     def roster_update(self, roster):
-        print 'roster_update', roster.findall('*/*')
+        print 'roster_update', roster.get_payload()
 
     def got_online(self, presence):
         #print presence
         from_jid = self.stanza_jid_from(presence)
+        #print 'got_online', from_jid, presence.get_payload()
         if from_jid in self.boundjid.full:
             summoner = parse_presence.parse_presence('Self', presence)
             print from_jid, summoner.name, summoner.data
@@ -115,7 +133,7 @@ class LoLChat(ClientXMPP):
         name = self.jid_summoner_name[from_jid]
         summoner = parse_presence.parse_presence(name, presence)
         self.summoners[name] = summoner
-        print 'online', from_jid, summoner.name, summoner.data
+        #print 'online', from_jid, summoner.name, summoner.data
         #import pdb; pdb.set_trace()
 
     def got_offline(self, presence):
@@ -136,11 +154,11 @@ class LoLChat(ClientXMPP):
 
         name = self.jid_summoner_name[from_jid]
         summoner = self.summoners[name]
-        print 'offline', from_jid, summoner.name, summoner.data
+        #print 'offline', from_jid, summoner.name, summoner.data
         #import pdb; pdb.set_trace()
 
     def message_received(self, message_stanza):
-        print message_stanza
+        print message_stanza, message_stanza.get_payload()
         from_jid = self.stanza_jid_from(message_stanza)
         name = 'Unknown'
         if from_jid in self.jid_summoner_name:
@@ -148,19 +166,22 @@ class LoLChat(ClientXMPP):
 
         timestamp = ''
         if STANZA_ATTRIBUTE_TIMESTAMP in message_stanza:
-            timestanp = message_stanza[STANZA_ATTRIBUTE_TIMESTAMP]
+            timestamp = message_stanza[STANZA_ATTRIBUTE_TIMESTAMP]
 
-        message = message_stanza['body'].text
-        print '\n{} {}: {}\n{}>'.format(timestamp, name, message, self.current_user[0])
+        #import pdb; pdb.set_trace()
+        #print name, message_stanza
+        message = message_stanza[STANZA_BODY]
+        print '{} {}: {}'.format(timestamp, name, message, self.current_user[1])
         #if msg['type'] in ('chat', 'normal'):
             #msg.reply("Thanks for sending\n%(body)s" % msg).send()
 
-    def list_online(self):
+    def list_online(self, jids=False, status=False):
         print 0, 'Nobody'
         for i, jid in enumerate(self.online):
             name = self.jid_summoner_name[jid]
             summoner = self.summoners[name]
-            print i + 1, name, summoner.data
+            data = UnicodePrettyPrinter().pformat(summoner.data) if status else ''
+            print '{} {} {} {}'.format(i + 1, name, jid if jids else '', data)
 
     def select_user(self, user_index):
         if user_index == 0:
@@ -222,8 +243,11 @@ if __name__ == '__main__':
             message = raw_input('{}>'.format(xmpp.current_user[1]))
             if message == '!exit' or message == '!q':
                 break
-            elif message == '!list' or message == '!l':
-                xmpp.list_online()
+            elif message == '!list' or message.startswith('!l'):
+                if 's' in message:
+                    xmpp.list_online(True, True)
+                else:
+                    xmpp.list_online(True, False)
             elif message == '!select':
                 xmpp.list_online()
 
@@ -239,9 +263,10 @@ if __name__ == '__main__':
 
                 index = int(message)
                 xmpp.select_user(index)
-            elif message == '!status':
-                pass
             else:
+                if not message:
+                    continue
+
                 if not xmpp.current_user[0]:
                     print 'use !select to select a current user first'
                     continue
