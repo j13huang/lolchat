@@ -131,6 +131,7 @@ class LoLChat(ClientXMPP):
             self.offline.remove(from_jid)
 
         name = self.jid_summoner_name[from_jid]
+        #print name, presence
         summoner = parse_presence.parse_presence(name, presence)
         self.summoners[name] = summoner
         #print 'online', from_jid, summoner.name, summoner.data
@@ -158,15 +159,13 @@ class LoLChat(ClientXMPP):
         #import pdb; pdb.set_trace()
 
     def message_received(self, message_stanza):
-        print message_stanza, message_stanza.get_payload()
+        #print message_stanza, message_stanza.get_payload()
         from_jid = self.stanza_jid_from(message_stanza)
         name = 'Unknown'
         if from_jid in self.jid_summoner_name:
             name = self.jid_summoner_name[from_jid]
 
-        timestamp = ''
-        if STANZA_ATTRIBUTE_TIMESTAMP in message_stanza:
-            timestamp = message_stanza[STANZA_ATTRIBUTE_TIMESTAMP]
+        timestamp = message_stanza[STANZA_ATTRIBUTE_TIMESTAMP]
 
         #import pdb; pdb.set_trace()
         #print name, message_stanza

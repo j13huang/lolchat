@@ -1,5 +1,6 @@
 class Summoner(object):
     DATA_SHOW_KEY = 'show'
+    DATA_RESOURCE_KEY = 'resource'
 
     def __init__(self, name, data):
         self.name = name

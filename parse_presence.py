@@ -5,6 +5,8 @@ import summoner
 PRESENCE_SHOW_KEY = 'show'
 PRESENCE_STATUS_KEY = 'status'
 
+LOL_CHAT_RESOURCE = 'xiff'
+
 def from_string(name, string):
     root = ElementTree.fromstring(string)
     stanza = Presence(xml=root)
@@ -37,6 +39,10 @@ def parse_presence(name, presence):
 
     return summoner.Summoner(name, data)
     """
+    if presence.get_from().resource != LOL_CHAT_RESOURCE:
+        data[summoner.Summoner.DATA_RESOURCE_KEY] = presence.get_from().resource
+        return summoner.Summoner(name, data)
+
     status = presence[PRESENCE_STATUS_KEY].encode('utf-8')
     #print status
     root = ElementTree.fromstring(status)
