@@ -165,7 +165,8 @@ class LoLChat(ClientXMPP):
         if from_jid in self.jid_summoner_name:
             name = self.jid_summoner_name[from_jid]
 
-        timestamp = message_stanza[STANZA_ATTRIBUTE_TIMESTAMP]
+        #https://github.com/fritzy/SleekXMPP/blob/develop/sleekxmpp/plugins/xep_0203/stanza.py#L31
+        timestamp = self._get_attr(STANZA_ATTRIBUTE_TIMESTAMP)
 
         #import pdb; pdb.set_trace()
         #print name, message_stanza
