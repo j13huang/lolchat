@@ -166,12 +166,12 @@ class LoLChat(ClientXMPP):
             name = self.jid_summoner_name[from_jid]
 
         #https://github.com/fritzy/SleekXMPP/blob/develop/sleekxmpp/plugins/xep_0203/stanza.py#L31
-        timestamp = self._get_attr(STANZA_ATTRIBUTE_TIMESTAMP)
-
         #import pdb; pdb.set_trace()
+        timestamp = message_stanza._get_attr(STANZA_ATTRIBUTE_TIMESTAMP)
+
         #print name, message_stanza
         message = message_stanza[STANZA_BODY]
-        print '{} {}: {}'.format(timestamp, name, message, self.current_user[1])
+        print '\n{} {}: {}\n{}>'.format(timestamp, name, message, self.current_user[1])
         #if msg['type'] in ('chat', 'normal'):
             #msg.reply("Thanks for sending\n%(body)s" % msg).send()
 
