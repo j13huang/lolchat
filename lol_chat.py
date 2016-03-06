@@ -1,3 +1,4 @@
+#!./bin/python
 import logging
 import argparse
 import getpass
@@ -171,7 +172,7 @@ class LoLChat(ClientXMPP):
 
         #print name, message_stanza
         message = message_stanza[STANZA_BODY]
-        print '\n{} {}: {}\n{}>'.format(timestamp, name, message, self.current_user[1])
+        print '\a\n{} {}: {}\n{}>'.format(timestamp, name, message, self.current_user[1])
         #if msg['type'] in ('chat', 'normal'):
             #msg.reply("Thanks for sending\n%(body)s" % msg).send()
 
